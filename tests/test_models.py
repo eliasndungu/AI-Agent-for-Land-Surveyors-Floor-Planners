@@ -3,6 +3,7 @@ Unit tests for spatial planning models.
 """
 
 import pytest
+from pydantic import ValidationError
 from spatial_planning.models import Dimensions, Position, Room, Constraint, Space, Layout
 
 
@@ -16,9 +17,9 @@ def test_dimensions_creation():
 
 def test_dimensions_invalid():
     """Test that invalid dimensions raise errors."""
-    with pytest.raises(Exception):
+    with pytest.raises(ValidationError):
         Dimensions(width=-5, height=8)
-    with pytest.raises(Exception):
+    with pytest.raises(ValidationError):
         Dimensions(width=5, height=0)
 
 

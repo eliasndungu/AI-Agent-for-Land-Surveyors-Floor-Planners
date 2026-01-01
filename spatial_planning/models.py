@@ -4,7 +4,7 @@ Represents spaces, rooms, constraints, and layouts.
 """
 
 from typing import List, Optional, Dict, Any
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field
 
 
 class Dimensions(BaseModel):
