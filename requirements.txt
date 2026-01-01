@@ -1,0 +1,6 @@
+# Core dependencies for AI spatial planning agent
+numpy>=1.21.0
+pydantic>=2.0.0
+
+# Development dependencies
+pytest>=7.0.0
