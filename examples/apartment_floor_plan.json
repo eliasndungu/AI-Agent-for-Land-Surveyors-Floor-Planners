@@ -1,0 +1,51 @@
+{
+  "dimensions": {
+    "width": 10,
+    "height": 8
+  },
+  "rooms": [
+    {
+      "id": "living",
+      "name": "Living Room",
+      "width": 5,
+      "height": 4,
+      "type": "living_room",
+      "priority": 9
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "width": 3,
+      "height": 3,
+      "type": "kitchen",
+      "priority": 8
+    },
+    {
+      "id": "bedroom1",
+      "name": "Master Bedroom",
+      "width": 4,
+      "height": 3.5,
+      "type": "bedroom",
+      "priority": 7
+    },
+    {
+      "id": "bathroom",
+      "name": "Bathroom",
+      "width": 2,
+      "height": 2,
+      "type": "bathroom",
+      "priority": 6
+    }
+  ],
+  "constraints": [
+    {
+      "type": "adjacency",
+      "params": {
+        "room1": "kitchen",
+        "room2": "living",
+        "max_distance": 5.0
+      },
+      "description": "Kitchen should be adjacent to living room"
+    }
+  ]
+}

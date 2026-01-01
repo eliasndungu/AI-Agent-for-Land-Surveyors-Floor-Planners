@@ -1,0 +1,51 @@
+{
+  "dimensions": {
+    "width": 20,
+    "height": 15
+  },
+  "rooms": [
+    {
+      "id": "house1",
+      "name": "Residential Building 1",
+      "width": 8,
+      "height": 6,
+      "type": "building",
+      "priority": 10
+    },
+    {
+      "id": "house2",
+      "name": "Residential Building 2",
+      "width": 7,
+      "height": 5,
+      "type": "building",
+      "priority": 9
+    },
+    {
+      "id": "parking",
+      "name": "Parking Area",
+      "width": 6,
+      "height": 4,
+      "type": "parking",
+      "priority": 7
+    },
+    {
+      "id": "garden",
+      "name": "Community Garden",
+      "width": 5,
+      "height": 4,
+      "type": "green_space",
+      "priority": 5
+    }
+  ],
+  "constraints": [
+    {
+      "type": "min_distance",
+      "params": {
+        "room1": "house1",
+        "room2": "house2",
+        "distance": 3.0
+      },
+      "description": "Minimum distance between buildings for safety"
+    }
+  ]
+}
